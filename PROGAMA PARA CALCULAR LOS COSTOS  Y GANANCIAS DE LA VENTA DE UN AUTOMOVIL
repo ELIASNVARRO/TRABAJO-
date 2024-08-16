@@ -1,25 +1,28 @@
+Programa Para calcular Las Ganancias y Pérdidas en un Negocio de Venta de Autos
 Start
-// Programa para calcular los costos y ganancias de la venta de un automóvil
-
-// Declaración de constantes
-Const Float precio_compra = 15000
-Const Float costo_reparaciones = 2000
-Const Float precio_venta = 18500
-Const Float comision_porcentaje = 0.05
+// Programa para calcular costos, comisión, y ganancia o perdida en la venta de un automóvil
 
 // Declaración de variables
+Declare Float precio_Compra
+Declare Float costo_Reparaciones
+Declare Float precio_Venta
 Declare Float costo_Total_Invertido
-Declare Float comision_Pagada
+Declare Float comisión_Vendedor
 Declare Float ganancia_Perdida
 
+// Asignación de valores
+Set precio_Compra = 15000
+Set costo_Reparaciones = 2000
+Set precio_Venta = 18500
+
 // Cálculo del costo total invertido
-Set costo_Total_Invertido = precio_compra + costo_reparaciones
+Set costo_Total_Invertido = precio_Compra + costo_Reparaciones
 
 // Cálculo de la comisión pagada al vendedor
-Set comision_Pagada = precio_venta * comisión_porcentaje
+Set comision_Vendedor = precio_Venta * 0.05
 
-// Cálculo de la ganancia o pérdida
-Set ganancia_Perdida = precio_venta - (costo_Total_Invertido + comision_Pagada)
+// Cálculo de la ganancia o pérdida después de la venta
+Set ganancia_Perdida = precio_Venta - (costo_Total_Invertido + comision_Vendedor)
 
 // Presentación de resultados
 Display "El costo total invertido en el automóvil es: ", costo_Total_Invertido
@@ -28,4 +31,3 @@ Display "El precio final de venta es: ", precio_Venta
 Display "La ganancia o pérdida después de la venta es: ", ganancia_Perdida
 
 End
-
