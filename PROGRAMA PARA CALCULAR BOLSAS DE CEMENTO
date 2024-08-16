@@ -1,0 +1,19 @@
+Programa para calcular bolsas cemento
+Start
+// Programa para calcular la cantidad de bolsas de cemento necesarias para cubrir un area
+
+// Declaración de variables
+Declare Float area_A_Cubrir
+Declare Float bolsas_necesarias
+
+// Obtención de datos
+Display "Ingrese el total de pies cuadrados a cubrir: "
+Input area_a_Cubrir
+
+// Calculo de la cantidad de bolsas de cemento
+Set bolsas_necesarias = area_A_Cubrir / 1500
+
+// Presentación del resultado
+Display "La cantidad de bolsas de cemento necesarias es: ", bolsas_necesarias
+
+End
